@@ -1,0 +1,122 @@
+body {
+  /*background-color: #282c34;*/
+  /*min-height: 100vh;*/
+  /*display: flex;*/
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+   /*font-size: calc(10px + 2vmin);*/
+  background-image: url("https://10ne-v.neocities.org/Portfolio/imagenes/fondoC.png");
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.reductor{
+  display: block;
+  height: 0px;
+}
+
+/*///////////////////*/
+.Cabecera1{ /*background-color: cadetblue;*/
+  order: 1;
+  width: 10%;
+  text-align: left;
+  margin-top: -2px;
+}
+.Cabecera2{ /*background-color: cornflowerblue;*/
+  order: 2;
+  width: 70%;
+  text-align: center;
+  margin-top: 12px;
+}
+.Cabecera3{ /*background-color: darkgoldenrod;*/
+  order: 3;
+  width: 10%;
+  text-align: right;
+  margin-top: 2px;
+}
+
+/*A continuación, los estilos para el selector de idioma: */
+.langSelect{
+  text-align: center;
+  padding-left: 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.dropdownLangSelect {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.dropdownLangSelect-content { /*La caja que se despliega*/
+  display: none;
+  position: absolute;
+  z-index: 1;
+  padding-top: 15px;
+}
+.dropdownLangSelect:hover .dropdownLangSelect-content{
+  display:block;
+}
+
+.bandera{
+  font-size: 45px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border: none;
+  vertical-align: middle;
+  line-height: 110%;
+  transition: text-shadow 0.3s, font-size 0.3s;
+}
+.bandera:hover{
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1);
+  font-size: 50px;
+  transition: text-shadow 0.3s, font-size 0.3s;
+  cursor: pointer;
+}
+
+footer{
+  color:gray;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+footer a {
+  text-decoration: none;
+  color:gray;
+}
+
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+@media all and (max-width:760px){
+
+  body {
+    background-image: url("https://10ne-v.neocities.org/Portfolio/imagenes/fondoVert.png");
+  }
+
+  .Cabecera1{ /*background-color: cadetblue;*/
+    order:2;
+    width: 30%;
+    text-align: center;
+  }
+  .Cabecera2{ /*background-color: cornflowerblue;*/
+    order: 3;
+    width: 30%;
+    text-align: right;
+    margin-top: -10px;
+    padding-top: 15px;
+  }
+  .Cabecera3{ /*background-color: darkgoldenrod;*/
+    order: 1;
+    width: 30%;
+    text-align: left
+  }
+
+  footer{
+    margin-top:30px;
+    font-size: 2vw;
+  }
+
+}

@@ -1,0 +1,123 @@
+.cabecera{ /*background-color: chartreuse;*/
+  order:0;
+  width: 100%;
+  height: 38px;
+  padding-top: 0px;
+  position: fixed;
+  display:flex;
+  justify-content: center;
+  border-bottom:  thin solid rgba(0, 255, 255, 0.5);
+}
+
+.homeImage{
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid rgb(124, 124, 124);
+  transition: width 0.3s, box-shadow 0.3s;
+}
+.homeImage:hover{
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow:0 0 20px rgba(255, 255, 255, 1);
+  transition: width 0.3s, box-shadow 0.3s;
+}
+
+.headerLink{
+  font-size: 19px;
+  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+  color: #00ffff;
+  transition: text-shadow 0.2s;
+  text-decoration: none;
+  background-color:rgba(0, 0, 0, 0);
+  border-width: 0px; border-color: transparent;
+  cursor: pointer;
+}
+.headerLink:hover{
+  font-size: 19px;
+  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+  color: #99ffff;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 20px rgba(0, 255, 255, 1); transition: text-shadow 0.3s;
+}
+  
+.headerSeparador{
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.menuIcon{
+    width: 0px; height: 0px;  
+}
+  .dropdownMenu {
+    display: block;
+}
+  .dropdownMenu-content { /*La caja que se despliega*/
+    display: block;
+    margin-top: -30px;
+}
+  .dropdownMenu:hover .dropdownMenu-content {
+    display: block;
+}
+
+
+
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+@media all and (max-width:760px){
+
+  .cabecera{
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+  .headerLink{
+    font-size: 16px;
+    background-color:rgba(0, 0, 0, 0);
+    border: 0px solid white;
+    display: block;
+  }
+  .headerLink:hover{font-size: 16px;}
+
+  .headerSeparador{
+    color:transparent;
+    font-size: 0px;
+  }
+
+  .menuIcon{
+    display: inline;
+    -webkit-filter: invert(90%);
+    filter:invert(90%);
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    transition: transform 0.3s, height 0.3s;
+  }
+  .menuIcon:hover{
+    -webkit-filter: invert(100%);
+    filter:invert(100%);
+    transform: scale(1.2);
+    transition: transform 0.3s, height 0.3s;
+    cursor: pointer;
+  }
+  .dropdownMenu {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 2px;
+  }
+  .dropdownMenu-content { /*La caja que se despliega*/
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 0px;
+    padding-top:15px;
+    text-align: right;
+    margin-left: -65px;
+  }
+  .dropdownMenu:hover .dropdownMenu-content {
+    display: block;
+  }
+
+
+}

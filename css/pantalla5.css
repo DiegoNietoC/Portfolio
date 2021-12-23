@@ -1,0 +1,95 @@
+.Pantalla5 { /*background-color: red;*/
+    color: white;
+    height: 86vh;
+    width: 100%;
+    display:block; align-items:center;
+}
+
+.contenedor5{  /*background-color: #206047;*/
+	display: table; margin: 0 auto;
+  width: 70%;
+  align-items:center;
+  margin-top: 100px;
+  height: 80%;
+}
+
+.Pantalla5-up{ /*background-color: black;*/ }
+
+.textoContacto{
+  font-size: 30px;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: -10px;
+}
+
+.Pantalla5-middle{ /*background-color: rgb(50, 50, 50);*/
+  display: table; margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  padding-top: 11%;
+}
+
+.textoYouCanWriteMe{
+	color:white;
+	font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+	font-size: 20px;
+}
+
+.line5{
+	border-top: 1px solid white;
+}
+
+.mailContacto {
+    font-family: 'Bebas Neue',cursive;
+    font-size: 500%;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    transition: text-shadow 1.5s;
+}
+
+.mailContacto:hover{
+	text-shadow: 0 0 20px rgba(255, 255, 255, 0.7); transition: text-shadow 0.3s;
+}
+
+.Pantalla5-down{
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+  margin-top: 10px;
+}
+
+.iconoContacto{
+  width: 50px;
+  filter: invert(100%);
+  transition: transform 0.3s;
+}
+.iconoContacto:hover{
+  transform: scale(1.4);
+  transition: transform 0.3s;
+}
+
+
+
+
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+@media all and (max-width:760px){
+
+  .Pantalla5{
+  	display:table;
+  }
+
+  .contenedor5{
+  	margin-top: 200px;
+  }
+
+  .line5{
+  	width: 70%;
+  }
+
+  .mailContacto {
+	font-size: 7vw;
+  }
+
+}

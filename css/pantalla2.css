@@ -1,0 +1,154 @@
+.Pantalla2{ /*background-color: rgb(98, 0, 255, 0.5);*/
+    color: white;
+    height: 105vh;
+    width: 100%;
+    display:flex; align-items:center;
+}
+
+.contenedor2{
+  display: table; margin: 0 auto;
+  width: 85%;
+  display:flex; align-items:center;
+}
+
+.Pantalla2-left{ /*background-color: black;*/
+  float: left;
+  text-align: right;
+  display:inline;
+  width: 50%;
+  height: 500px;
+  display:flex; align-items:center;
+  margin-right: 10px;
+}
+.Pantalla2-right{ /*background-color: rgb(20, 20, 20);*/
+  float: left;
+  text-align: center;
+  display: inline;
+  width: 50%;
+  height: 500px;
+  display:flex; align-items:center;
+  margin-left: 10px;
+}
+
+.textoAboutMe{
+  text-align: left;
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: -10px;
+}
+.textoAboutMe-Description{
+  text-align: justify;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+  color: #00ffff;
+}
+
+.buttonDownloadCV{
+  text-align: left;
+  padding-left: 20px;
+}
+.downloadCV{
+  width: 96%;
+  height: 30px;
+  border-radius: 0px;
+  border: 1px solid white;
+  background-color: transparent;
+  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+  color: white;
+}
+.downloadCV:hover{
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  cursor:pointer;
+}
+.downloadCV:active{
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  cursor:pointer;
+}
+
+.iconTrain{
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  margin-top: 20px;
+  padding-right: 5px;
+}
+
+.icono{
+  width: 30px;
+  filter: invert(100%);
+}
+
+.videoYT{
+  width: 560px;
+  height: 315px;
+  border-radius: 10px;
+}
+
+
+
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+@media all and (max-width:760px){
+
+  .Pantalla2{
+    display:table;
+    margin-top: 30px;
+  }
+
+  .contenedor2{
+    width: 90%;
+    display:table; align-items:center;
+  }
+
+  .Pantalla2-left{
+    width: 100%;
+    align-items:center;
+    float:none;
+    display: table;
+    margin-right: 0px;
+  }
+  .Pantalla2-right{
+    width: 100%;
+    align-items:center;
+    float:none;
+    display: table;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .textoAboutMe{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 30px;
+    margin-bottom: -20px;
+  }
+  
+  .buttonDownloadCV{
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 25px;
+  }
+
+  .iconTrain{
+    margin-top: 45px;
+  }
+
+  .icono{
+    width: 23px;
+  }
+
+  .videoYT{
+    width: 100%;
+    height: 315px; 
+    margin-top: 30px;
+  }
+    
+}
