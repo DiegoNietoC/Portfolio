@@ -1,94 +1,57 @@
-.Pantalla4{ background-color: rgb(53, 3, 133, 0);
+.textoContacto, .textoYouCanWriteMe, .mailContacto{
   color: white;
-  height: 100vh;
-  width: 100%;
-  display:flex; align-items:center;
 }
 
-.contenedor4{ /*background-color: yellow;*/
-    display: table; margin: 0 auto;
-    width: 70%;
-    align-items:center;
-}
-
-.Pantalla4-up{ /*background-color: black;*/}
-
-.Pantalla4-down{ /*background-color: rgb(20, 20, 20);*/
-  display: table; margin: 0 auto;
-  width: 100%;
-}
-
-.textoWorks{
+.textoContacto{
   font-size: 30px;
   font-family: 'JetBrains Mono', monospace;
   margin-bottom: -10px;
+  width: 84%;
+  margin-top: -10vh;
+  margin-bottom: 10vh;
 }
 
-.textoPortfolio{
+.textoYouCanWriteMe{
+  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
   font-size: 20px;
-  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
 }
 
-.muestras{ /*background-color: red;*/
-  margin-left: -15%;
-  margin-right: -15%;
-  display: block;
-  height: 230px;
-  margin-bottom: 30px;
-  text-align: center;
-  justify-content: space-between;
-  align-items: flex-end;
-  align-content: flex-end;
+.mailContacto {
+    font-family: 'Bebas Neue',cursive;
+    font-size: 500%;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: text-shadow 1.5s;
+}
+.mailContacto:hover{
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  transition: text-shadow 0.3s;
 }
 
-.tarjeta{background-color: white;
-  color:black;
-  border-radius: 0px;
-  width: 300px;
-  height: 220px;
-  text-align: center;
-  display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
-  overflow: hidden;
-  align-items: center;
-  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
-  border: thin solid black;
-  transition: border 0.5s, box-shadow 0.5s, transform 0.5s;
+.line4{
+  width: 80vw;
+  border-top: 1px solid white;
 }
 
-.tarjeta:hover{
-  border: thin solid #00ffff;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
-  transition: border 0.5s, box-shadow 0.5s, transform 0.5s;
-  transform: scale(1.1);
+.iconoContacto{
+  width: 50px;
+  filter: invert(100%);
+  transition: transform 0.3s;
 }
-
-.tarjetaImagen1{
-  width: 101%;
-  height: 180px; 
-  margin-bottom: -11px;
+.iconoContacto:hover{
+  transform: scale(1.4);
+  transition: transform 0.3s;
 }
-
-
 
 /*A partir de aquí, empiezan las configuraciones responsivas*/
-/*A partir de aquí, empiezan las configuraciones responsivas*/
-/*A partir de aquí, empiezan las configuraciones responsivas*/
-@media all and (max-width:760px){ 
+@media all and (max-width:760px){
 
-  .Pantalla4{
-    display:table;
-    margin-top: 20px;
+  .line4{
+    width: 70%;
   }
 
-  .muestras{
-    display: table;
-  }
-
-  .tarjeta{
-    margin-top:5px;
-    margin-bottom:5px;
-  }
+  .mailContacto {
+    font-size: 7vw;
+  } 
 
 }

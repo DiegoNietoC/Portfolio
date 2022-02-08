@@ -1,0 +1,75 @@
+.textWorks, .textPortfolio{
+	color: white;
+
+	width: 84%;
+	margin:  3vh;
+}
+.textWorks{
+	font-size: 30px;
+	font-family: 'JetBrains Mono', monospace;
+	margin-bottom: -10px;
+}
+.textPortfolio{
+	font-size: 20px;
+	font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+}
+
+.samples{
+
+	width: 95%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.tarjeta{
+	max-width: 25vw;
+	border: thin solid black;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+	transition: border 0.5s, box-shadow 0.5s, transform 0.5s;
+}
+
+
+.tarjeta:hover{
+	border: thin solid #00ffff;
+	box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+	transition: border 0.5s, box-shadow 0.5s, transform 0.5s;
+	transform: scale(1.1);
+}
+
+.tarjetaLink{
+	color:black;
+	text-decoration: none;
+	font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
+	text-align: center;
+}
+
+.tarjetaImagen1{
+	max-width: 25vw; 
+}
+
+/*A partir de aquí, empiezan las configuraciones responsivas*/
+@media all and (max-width:760px){
+
+	.samples{
+		flex-direction: column;
+		align-items: center;
+		width: 90vw;
+		position: relative;
+	}
+
+	.tarjetaLink{
+		margin-top: 4vw;
+	}
+
+	.tarjeta, .tarjetaImagen1{
+		width: 74vw;
+		max-width: 75vw; 
+	}
+
+}

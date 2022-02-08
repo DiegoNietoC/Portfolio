@@ -1,154 +1,112 @@
-.Pantalla2{ /*background-color: rgb(98, 0, 255, 0.5);*/
-    color: white;
-    height: 105vh;
-    width: 100%;
-    display:flex; align-items:center;
+.aboutMe{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10fr 1fr;
+  grid-template-areas:  "contentX imgX"
+                        "sectionX sectionX";
+  width: 84%;
+  height: 80%;
 }
 
-.contenedor2{
-  display: table; margin: 0 auto;
-  width: 85%;
-  display:flex; align-items:center;
+.aboutMeContentLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 38vw;
+  grid-area: contentX;
 }
 
-.Pantalla2-left{ /*background-color: black;*/
-  float: left;
-  text-align: right;
-  display:inline;
-  width: 50%;
-  height: 500px;
-  display:flex; align-items:center;
-  margin-right: 10px;
-}
-.Pantalla2-right{ /*background-color: rgb(20, 20, 20);*/
-  float: left;
-  text-align: center;
-  display: inline;
-  width: 50%;
-  height: 500px;
-  display:flex; align-items:center;
-  margin-left: 10px;
-}
-
-.textoAboutMe{
-  text-align: left;
-  padding-left: 20px;
+.titleAboutMe{
+  width: 100%;
   font-size: 30px;
   font-family: 'JetBrains Mono', monospace;
-  margin-bottom: -10px;
+  color:  white;
+  margin-top: -1vh;
 }
+
 .textoAboutMe-Description{
   text-align: justify;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: 16px;
   font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
   color: #00ffff;
+  margin-top: -0.5vh;
 }
 
-.buttonDownloadCV{
-  text-align: left;
-  padding-left: 20px;
-}
 .downloadCV{
-  width: 96%;
+  width: 38vw;
   height: 30px;
-  border-radius: 0px;
   border: 1px solid white;
   background-color: transparent;
-  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
   color: white;
+  font-family: 'Roboto Mono', monospace, 'M PLUS 1 Code', sans-serif;
 }
-.downloadCV:hover{
-  border: 1px solid #00ffff;
+.downloadCV:hover, .downloadCV:active{
   color: #00ffff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
   cursor:pointer;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
 }
 .downloadCV:active{
-  border: 1px solid #00ffff;
-  color: #00ffff;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0);
-  cursor:pointer;
+  box-shadow: none;
+}
+
+.Pantalla2Img{
+  width: 40vw;
+  border-radius: 10px;
+  grid-area: imgX;
+  align-self: center;
 }
 
 .iconTrain{
-  text-align: center;
-  justify-content: space-around;
+  width: 80vw;
   display: flex;
-  margin-top: 20px;
-  padding-right: 5px;
+  justify-content: space-evenly;
+  margin-top: 4vh;
+  grid-area: sectionX;
+  justify-self: center;
 }
 
-.icono{
-  width: 30px;
+.iconSkill{
+  width: 3.2vw;
+  min-width: 30px;
   filter: invert(100%);
 }
 
-.videoYT{
-  width: 560px;
-  /*height: 315px;*/
-  border-radius: 10px;
-}
-
-
-
-/*A partir de aquí, empiezan las configuraciones responsivas*/
-/*A partir de aquí, empiezan las configuraciones responsivas*/
 /*A partir de aquí, empiezan las configuraciones responsivas*/
 @media all and (max-width:760px){
 
-  .Pantalla2{
-    display:table;
-    margin-top: 30px;
+  .aboutMe{
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 0.5fr 2fr;
+    grid-template-areas:  "contentX"
+                          "sectionX"
+                          "imgX";
+    width: 95vw;
+    margin-bottom: 10vh;
   }
 
-  .contenedor2{
-    width: 90%;
-    display:table; align-items:center;
+  .aboutMeContentLeft{
+    width: 80vw;
+    justify-self: center;
+    margin-top: 5vh;
   }
 
-  .Pantalla2-left{
-    width: 100%;
-    align-items:center;
-    float:none;
-    display: table;
-    margin-right: 0px;
-  }
-  .Pantalla2-right{
-    width: 100%;
-    align-items:center;
-    float:none;
-    display: table;
-    margin-left: 0px;
-    margin-top: 15px;
+  .downloadCV{
+    width: 80vw;
   }
 
-  .textoAboutMe{
-    text-align: left;
-    padding-left: 20px;
-    font-size: 30px;
-    margin-bottom: -20px;
-  }
-  
-  .buttonDownloadCV{
-    text-align: center;
-    padding-left: 0px;
-    margin-top: 25px;
+  .Pantalla2Img{
+    width: 90vw;
+    border-radius: 10px;
+    grid-area: imgX;
+    justify-self: center;
   }
 
   .iconTrain{
-    margin-top: 45px;
+    width: 81vw;
+    justify-content: space-between;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
   }
-
-  .icono{
-    width: 23px;
-  }
-
-  .videoYT{
-    width: 100%;
-    /*height: 315px; */
-    margin-top: 30px;
-  }
-    
+  
 }

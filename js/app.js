@@ -1,7 +1,7 @@
 var nombre = "Diego";
 var x = "o";
 var o = "";
-var correo = "diego.n.x.000@gmail.com" 
+var correo = "diego.n.x.000@gmail.com"
 
 //Textos de idioma por defecto
 document.getElementById("titulo").innerHTML = `${nombre} Nieto Conrado`;
@@ -39,7 +39,7 @@ function engFxText(){
 														When I'm not working in programming and development, I play my artistic side by drawing and illustrating with programs like Adobe Photoshop, Illustrator, and Premiere Pro. <br><br>
 														I like simple and elegant solutions. I am a self-taught person and always ready to learn new technologies.`;
 	document.getElementById("works").innerHTML = "Works";
-	document.getElementById("portfolio4").innerHTML = "Portfolio";
+	document.getElementById("Pantalla3Portfolio").innerHTML = "Portfolio";
 	document.getElementById("downloadCVbutton").innerHTML = "Download CV";
 	document.getElementById("downloadCVlink").href = `https://10ne-v.neocities.org/Portfolio/assets/${nombre}NC-CV-eng.pdf`;
 	document.getElementById("textContact").innerHTML = "Contact";
@@ -61,7 +61,7 @@ function espFxText(){
 														Cuando no estoy trabajando en programación y desarrollo, desempeño mi lado artístico realizando dibujos e ilustraciones con programas como Adobe Photoshop, Illustrator y Premiere Pro. <br><br>
 														Me gustan las soluciones simples y elegantes. Soy una persona autodidacta y siempre dispuest${x} a aprender nuevas tecnologías.`;
 	document.getElementById("works").innerHTML = "Trabajos";
-	document.getElementById("portfolio4").innerHTML = "Portafolio";
+	document.getElementById("Pantalla3Portfolio").innerHTML = "Portafolio";
 	document.getElementById("downloadCVbutton").innerHTML = "Descargar CV";
 	document.getElementById("downloadCVlink").href = `https://10ne-v.neocities.org/Portfolio/assets/${nombre}NC-CV-esp.pdf`;
 	document.getElementById("textContact").innerHTML = "Contacto";
